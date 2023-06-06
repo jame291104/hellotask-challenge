@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
+import "./routes_styles/loginView.css"
 import Toastify from 'toastify-js'
 import "toastify-js/src/toastify.css"
 import { auth } from "../Firebase/firebase"
 import {createUserWithEmailAndPassword, signInWithEmailAndPassword} from "firebase/auth"
 import { createDocument } from '../Services/task_services'
+import { Button } from 'react-bootstrap'
 
 export const LoginView = (props) => {
 
@@ -123,19 +125,19 @@ export const LoginView = (props) => {
     
   return (
     <main>
-      <section>
-        <div>
-          <h1>{register ? "Registrate" : "Inicia sesión" }</h1>
+      <section className='login-section'>
+        <div className='login-container'>
+          <h1 className='login-title'>{register ? "Regístrate" :  "Inicia sesión" }</h1>
            <form onSubmit={register ? createSubmit : signSubmit}>
             <label htmlFor="email">Correo</label>
-             <input type="email" id="email" placeholder='hello@task.com' />
+             <input className='inputStyle' type="email" id="email" placeholder='hello@task.com' />
             <label htmlFor="password">Contraseña</label>
-             <input type="password" id='password' placeholder='Ingresa tu contraseña'/>
-             <button>{register ? "Registrate" : "Iniciar sesión" }</button>
+             <input className='inputStyle' type="password" id='password' placeholder='Ingresa tu contraseña'/>
+             <button className='button1'>{register ? "Registrate" : "Iniciar sesión" }</button>
            </form>
-           <button onClick={() => setRegister(!register)}>
-              {register ? "Inicia sesión" : "Crear cuenta" }
-           </button>
+           <Button variant="link" onClick={() => setRegister(!register)}>
+              {register ? "¿Ya tienes una cuenta? Inicia sesión" : "¿No tienes una cuenta? Creala gratis" }
+           </Button>
         </div>
       </section>
     </main>
