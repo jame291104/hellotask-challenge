@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "../Firebase/firebase";
-import { LoginView } from "./LoginView";
 import { Dashboard } from './Dashboard';
+import { LoginView } from './LoginView';
 
 export const ToAccess = () => {
 

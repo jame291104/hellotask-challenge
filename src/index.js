@@ -8,7 +8,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 /*Importing Routes */
 import {LoginView } from "./routes/LoginView";
 import { Dashboard } from "./routes/Dashboard";
-import { SignOut } from "./routes/SignOut";
 import { ToAccess } from "./routes/ToAccess";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -19,7 +18,6 @@ root.render(
       <Route path='/ToAccess' element= {<ToAccess />}/>
       <Route path='login' element= {<LoginView />}/>
       <Route path='dashboard' element= {<Dashboard />}/>
-      <Route path='signout' element= {<SignOut/>}/>
     </Routes>
   </BrowserRouter>
 );
