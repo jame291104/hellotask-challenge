@@ -51,6 +51,9 @@ export const LoginView = (props) => {
          case "auth/invalid-email":
            textError = "Intenta con un correo válido"
            break;
+         case "auth/email-already-exists":
+           textError = "Este usuario ya existe, inicia sesión"  
+           break;  
           
 
       }

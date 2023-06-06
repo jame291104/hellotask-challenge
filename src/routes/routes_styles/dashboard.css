@@ -1,9 +1,60 @@
 body{
     margin: 0;
     padding: 0%;
-    background-color: #FFFFFF;
+    background-image: url("../../../public/img/backgroundcolorfull.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
 }
+
+header{
+    display: flex;
+    height:max-content;
+    background-color: #000000b2;
+}
+
+.helloTask{
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin: 20px 10px;
+}
+
+section {
+    height: 100vh;
+    padding-top: 10vh;
+  }
+
+.panel_control{
+    margin: 10px 10px 10px auto ;
+}
+
 .form{
     display: flex;
     margin: 30px 30px 30px 30px;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.container-glass{
+    width: 100%;
+    border: 2px solid #fafafa10;
+    border-radius: 10px;
+    background-color: #00000031; 
+    backdrop-filter: blur(0.4rem);
+    -webkit-backdrop-filter: blur(0.4rem)
+}
+.container-glass h1{
+    text-align: center;
+    color: #ffffff;
+}
+
+/*Responsive design*/
+
+@media (max-width: 420px){
+    .helloTask{
+        font-size: 15px;
+        margin: 20px 10px;
+    }
 }

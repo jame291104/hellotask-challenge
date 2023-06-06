@@ -207,8 +207,9 @@ export const Dashboard = ({ user, setUser }) => {
     return (
         <main>
             <header>
+                <h1 className='helloTask'><i class="bi bi-pen"></i> HELLOTASK</h1>
                 <div className='panel_control'>
-                    <DropdownButton id="dropdown-basic-button" title={user.email}>
+                    <DropdownButton variant="secondary" id="dropdown-basic-button" title={user.email}> 
                         <Dropdown.Item href="#">Pendientes</Dropdown.Item>
                         <Dropdown.Item href="#"></Dropdown.Item>
                         <Dropdown.Item href="#" onClick={handleSignOut}>Cerrar Sesión</Dropdown.Item>
@@ -217,18 +218,21 @@ export const Dashboard = ({ user, setUser }) => {
             </header>
             <section>
                 <article className="form">
-                    <Form onSubmit={handleOnSubmit}>
+                    <div className='container-glass container'>
+                        <h1>Agrega una tarea</h1>
+                    <Form onSubmit={handleOnSubmit} className='container'>
                         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                            <Form.Label>Nombre de la tarea</Form.Label>
-                            <Form.Control type="text" placeholder="" onChange={handleOnChangeName} />
-                            <Form.Label>Fecha de cumplimiento</Form.Label>
+                            <Form.Label className='text-light'>Nombre de la tarea</Form.Label>
+                            <Form.Control type="text" placeholder="Estudiar filosofía" onChange={handleOnChangeName} />
+                            <Form.Label className='text-light'>Fecha de cumplimiento</Form.Label>
                             <Form.Control type="date" placeholder="" onChange={handleOnChangeDate} />
                         </Form.Group>
-                        <Button onClick={addTask} variant="primary">Guardar</Button>
+                        <Button className='my-2' onClick={addTask} variant="warning">Guardar</Button>
                     </Form>
+                    </div>
                 </article>
                 <article className='all-tasks'>
-                    <div>
+                    <div className='container'>
                         <Table striped bordered hover>
                             <thead>
                                 <tr>
@@ -247,7 +251,7 @@ export const Dashboard = ({ user, setUser }) => {
                                             <td>{list.stateTask ? "Completada" : "Pendiente"}</td>
                                             <td>
                                                 <Button onClick={() => handleIndex(index)} variant="success" ><i className="bi bi-check-circle-fill"></i></Button>
-                                                <Button onClick={() => deleteTask(list, index)} variant="danger" className='mx-2'><i className="bi bi-trash-fill"></i></Button>
+                                                <Button onClick={() => deleteTask(list, index)} variant="danger" className='mx-2 my-2'><i className="bi bi-trash-fill"></i></Button>
                                                 <Button variant="primary" onClick={() => handleShow(list, index)}>
                                                     <i className="bi bi-pencil-square"></i>
                                                 </Button>

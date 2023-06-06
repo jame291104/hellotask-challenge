@@ -1,9 +1,14 @@
 body{
     margin: 0;
-    background-image: url('../public/img/Home.png');
+   
+}
+
+section{
+    background-image: url('../public/img/backgroundcolorfull.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    background-attachment: fixed;
 }
 .app{
     height: 100vh;
@@ -15,21 +20,26 @@ body{
 .title{
     font-size: 30px;
     font-family:'Roboto', sans-serif;
-    color: #347571;
-    margin: 10vh;
+    color: #ffffff;
+    margin-left: 50px;
 }
 .box-text{
-    max-width: 40%;
+    max-width: 60%;
     margin: 10vh 10vh 10vh 15vh;
 }
 .main-text{
     font-family: 'Roboto', sans-serif;
-    font-size: 60px;
-    color: #347571;
-    line-height: 10vh;
+    font-size: 65px;
+    color: #ffffff;
+    line-height: 65px;
+}
+.phrase{
+    color: #000000;
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 30px;
 }
 .start_now{
-    background-color: #5EC57E; /* Green */
+    background-color: #000000;
     border: none;
     border-radius: 10px;
     color: rgb(255, 255, 255);
@@ -38,4 +48,63 @@ body{
     text-decoration: none;
     display: inline-block;
     font-size: 20px;
+}
+
+/* Responsive design */
+
+@media (max-width: 1000px){
+    .title{
+        font-size: 20px;
+    }
+    .main-text{
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .phrase{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 750px){
+    .box-text{
+        max-width: 60%;
+        margin: 5vh 5vh 5vh 10vh;
+    }
+    .title{
+        font-size: 15px;
+        margin-left: 30px;
+    }
+    .main-text{
+        font-size: 35px;
+        line-height: 35px;
+    }
+    .phrase{
+        font-size: 10px;
+    }
+    .start_now{
+        padding: 5px 15px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 420px){
+    .box-text{
+        max-width: 70%;
+        margin: 2vh 2vh 2vh 5vh;
+    }
+    .title{
+        font-size: 10px;
+        margin-left: 20px;
+    }
+    .main-text{
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .phrase{
+        font-size: 10px;
+    }
+    .start_now{
+        padding: 5px 15px;
+        font-size: 10px;
+    }
 }

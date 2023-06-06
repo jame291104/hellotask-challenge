@@ -1,10 +1,9 @@
 body{
     margin: 0%;
-    background-color: #9feeb8;
-    background-image: url("../../../public/img/background2.png");
+    background-image: url("../../../public/img/backgroundcolorfull.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    min-height: 100vh;
 }
 
 .login-container{
@@ -20,10 +19,10 @@ body{
     border-radius: 10px;
 }
 .login-title{
-    width: 220px;
+    /* width: 220px; */
     text-align: center;
     font-size: 35px;
-    color: #9feeb8;
+    color: #ffe601;
     margin: 10px 40px;
 }
 .login-container label{
@@ -46,7 +45,7 @@ body{
 }
 
 .button1{
-    background-color: #5EC57E; /* Green */
+    background-color: #0284ee; /* Green */
     border: none;
     border-radius: 10px;
     color: rgb(255, 255, 255);
@@ -56,4 +55,31 @@ body{
     display: inline-block;
     font-size: 20px;
     margin: 10px 82px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 420px){
+    .login-container{
+        width: 250px;
+        height: 350px;
+    }
+    .login-title{
+        font-size: 25px;
+        margin: 0 5px 10px 5px;
+        padding: 0%;
+    }
+    .inputStyle{
+        width: 100%;
+        height: 20px;
+        padding-top: 5px;
+        margin-bottom: 30px;
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+    .button1{
+        padding: 5px 10px;
+        font-size: 15px;
+        margin: 10px 45px;
+    }
 }

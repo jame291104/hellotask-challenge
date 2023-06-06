@@ -41,10 +41,10 @@ export const PopUp = ({initialState, handleClose, handleNewName, handleNewDate, 
                 </Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={handleClose}>
-                        Close
+                        Cancelar
                     </Button>
-                    <Button variant="primary" onClick={modifiedTask}>
-                        Save Changes
+                    <Button variant="success" onClick={modifiedTask}>
+                        Guardar
                     </Button>
                 </Modal.Footer>
             </Modal>
