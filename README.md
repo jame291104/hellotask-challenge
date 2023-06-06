@@ -37,3 +37,7 @@ A pesar de no tener conocimientos previos sobre la base de datos GoogleFirebase,
 Lamentablemente en la base de datos no se cambia el estado de la tarea y tampoco se renombra la tarea. Se que en el plazo de entrega no se refleja esta funcionalidad, pero seguiré trabajando en este proyecto para seguir aprendiendo.
 
 ### Muchas Gracias
+
+## Video 
+
+[![Alt text](https://img.youtube.com/vi/EU6hp_CkS54/0.jpg)](https://www.youtube.com/watch?v=EU6hp_CkS54)
