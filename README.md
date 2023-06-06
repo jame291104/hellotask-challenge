@@ -38,4 +38,6 @@ Lamentablemente en la base de datos no se cambia el estado de la tarea y tampoco
 
 ### Muchas Gracias
 
-## Video:
+## Video 
+
+[![Alt text](https://img.youtube.com/vi/EU6hp_CkS54/0.jpg)](https://www.youtube.com/watch?v=EU6hp_CkS54)
