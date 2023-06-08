@@ -30,7 +30,7 @@ A pesar de no tener conocimientos previos sobre la base de datos GoogleFirebase,
 
 ### Solución:
 
-- Aplicar la programación orientada objetos, creando una clase llamada TaskObject, para guardar lo que se iba a utilizar durante todo el codigo, es decir: Id de la tarea, nombre de la tarea, uid del usuario, estado de la tarea, fecha limite de la tarea, etc. De esa forma solo se tendria que acceder a los metodosm del objeto.
+- Aplicar la programación orientada objetos, creando una clase llamada TaskObject, para guardar lo que se iba a utilizar durante todo el codigo, es decir: Id de la tarea, nombre de la tarea, uid del usuario, estado de la tarea, fecha limite de la tarea, etc. De esa forma solo se tendria que acceder a los metodos del objeto.
 
 ### Aclaración:
 
